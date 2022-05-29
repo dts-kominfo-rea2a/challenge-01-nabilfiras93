@@ -2,27 +2,63 @@
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
+let monicasColor = new Set();
+monicasColor.add('yellow');
+monicasColor.add('pink');
+monicasColor.add('white');
+monicasColor.add('purple');
+
+let wendysColor = new Set();
+wendysColor.add('blue');
+wendysColor.add('black');
+wendysColor.add('grey');
+
+let monicasResto = new Set();
+monicasResto.add('bento');
+monicasResto.add('sushi');
+monicasResto.add('pancake');
+monicasResto.add('eggy');
+monicasResto.add('tempura');
+monicasResto.add('bento');
+monicasResto.add('eggy');
+monicasResto.add('padang');
+monicasResto.add('tteok');
+monicasResto.add('sushi');
+monicasResto.add('sushi');
+
+let wendysResto = new Set();
+wendysResto.add('tempura');
+wendysResto.add('bento');
+wendysResto.add('sushi');
+wendysResto.add('pancake');
+wendysResto.add('padang');
+wendysResto.add('katsu');
+wendysResto.add('geprek');
+wendysResto.add('pancake');
+wendysResto.add('eggy');
+
+
 // Start Test
 const firstUser = {
     name: "Monica",
     gender: "female",
     age: "17",
     email: "monica@dingdong.com",
-    favoriteColor: ["Yellow", "Pink", "White", "Purple"],
+    favoriteColor: [...monicasColor],
     isHavePet: "Yes",
     education: [
         { name: "SD 01", city: "Jakarta", graduate: "2016" },
         { name: "SMP 02", city: "Jakarta", graduate: "2019" },
         { name: "SMA 03", city: "Tangerang" },
     ],
-    favoriteRestaurant: ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"],
+    favoriteRestaurant: [...monicasResto],
 };
 const secondUser = {
     name: "Wendy",
     gender: "male",
     age: "23",
     email: "wendy@dingdong.com",
-    favoriteColor: ["Blue", "Black", "Grey"],
+    favoriteColor: [...wendysColor],
     isHavePet: "No",
     education: [
         { name: "SD 02", city: "Jakarta", graduate: "2010" },
@@ -30,7 +66,7 @@ const secondUser = {
         { name: "SMA 01", city: "Surabaya", graduate: "2016" },
         { name: "Universitas Maju", city: "Tangerang" },
     ],
-    favoriteRestaurant: ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"],
+    favoriteRestaurant: [...wendysResto],
 };
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
